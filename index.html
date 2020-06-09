@@ -1,0 +1,464 @@
+<!DOCTYPE html><html lang="en-US"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>The Slim, Open and Modular PHP Application Framework - SOMA</title><meta name="author" content="Niklas Rosenqvist"><meta name="description" content="SOMA is a lightweight PHP micro-framework designed to be a flexible and modular base for your future projects."><meta name="keywords" content="php, modular, framework, open source, slim, developer friendly, documentation"><meta name="og:type" content="website"><meta name="og:locale" content="en-US"><meta name="og:title" content="The Slim, Open and Modular PHP Application Framework - SOMA"><meta name="og:description" content="SOMA is a lightweight PHP micro-framework designed to be a flexible and modular base for your future projects."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@nsrosenqvist"><meta name="twitter:creator" content="@nsrosenqvist"><meta name="twitter:title" content="The Slim, Open and Modular PHP Application Framework - SOMA"><meta name="twitter:description" content="SOMA is a lightweight PHP micro-framework designed to be a flexible and modular base for your future projects."><link rel="canonical" href="https://soma-php.github.io/papyrus/index.html"><link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://soma-php.github.io/main.80f7b431.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/vs2015.min.css"></head><body class="parallax-container index"> <nav id="menu" class="sticky-top navbar navbar-light navbar-expand-sm"> <div class="container"> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsible-menu" aria-controls="collapsible-menu" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <span class="navbar-brand ml-auto ml-sm-none"> <a href="https://soma-php.github.io/papyrus/#"><img src="https://soma-php.github.io/icon-512.46021826.png" alt="SOMA icon" id="logo"></a> </span> <div class="collapse navbar-collapse" id="collapsible-menu"> <ul class="navbar-nav ml-auto"> <li class="nav-item mx-1"> <a class="nav-link py-3" href="https://soma-php.github.io/" target="_self"> <i data-feather="help-circle"></i> About </a> </li> <li class="nav-item mx-1"> <a class="nav-link py-3" href="https://github.com/soma-php/soma" target="_blank"> <i data-feather="tool"></i> Development </a> </li> <li class="nav-item mx-1"> <a class="nav-link py-3" href="https://github.com/soma-php/soma/issues" target="_blank"> <i data-feather="alert-triangle"></i> Issues </a> </li> </ul> </div> </div> </nav> <header id="header"> <div id="hero" class="text-center"> <div class="col-xl-7 col-lg-8 col-md-9 col-sm-12 mx-auto my-5"> <h1 id="logo-header">SOMA</h1> <div class="font-weight-normal mx-auto my-3 container-mw-sm"><p>A lightweight PHP micro-framework designed to be a flexible and modular base for your future projects.</p>
+</div> <a class="btn btn-lg btn-primary" href="#main" data-smooth="">Find out more</a> </div> </div> </header> <main id="main"> <section id="intro" class="section-m"> <div class="container container-mw-sm"> <div class="row text-center"> <div class="col-12"> <html><head></head><body><p>SOMA (<em>Slim Open Modular Framework</em>) is a lightweight PHP micro-framework, designed to provide the bare essentials and lay a foundation for a developer to modularly put together their application without the framework getting in the way. <code>soma/soma</code> is the core that provides config loading, DI container, environment loading, service providers, facades, class aliases and a command line interface.</p>
+</body></html> </div> </div> </div>
+</section>
+<section id="featured" class="bg-light section-p"> <div class="container container-mw-md"> <h2 class="text-center text-uppercase">Featured</h2> <div class="row"> <div class="col-sm-6"> <div class="card"> <div class="card-body"> <a href="https://soma-php.github.io/papyrus" target="_blank"><img class="card-img-top px-5" src="https://raw.githubusercontent.com/soma-php/papyrus-resources/master/logo-1024.png" alt="Papyrus logo"></a> <div class="card-text mt-3"><p>Papyrus is a flat file CMS, utilizing Markdown files and heavy use of file compilation and performance optimizations to provide a fast website that is easy to administrate. It's meant to provide simple publishing without requiring knowledge of static website compilers and avoiding their limitations.</p>
+</div> <div class="text-center"> <a href="https://soma-php.github.io/papyrus" target="_blank" class="card-link">Visit project</a> </div> </div> </div> </div> <div class="col-sm-6"> <ul class="list-group"> <li class="list-group-item"> <h3><i data-feather="package"></i> <a href="https://github.com/nsrosenqvist/soma-router" target="_blank">nsrosenqvist/soma-router</a></h3> <p>Simple integration of <em>League Route</em> into SOMA</p> </li> <li class="list-group-item"> <h3><i data-feather="package"></i> <a href="https://github.com/nsrosenqvist/soma-cache" target="_blank">nsrosenqvist/soma-cache</a></h3> <p><em>Symfony Cache</em> for SOMA</p> </li> <li class="list-group-item"> <h3><i data-feather="package"></i> <a href="https://github.com/nsrosenqvist/soma-database" target="_blank">nsrosenqvist/soma-database</a></h3> <p>Illuminate Database tools integrated with SOMA</p> </li> <li class="list-group-item"> <h3><i data-feather="package"></i> <a href="https://github.com/nsrosenqvist/soma-logger" target="_blank">nsrosenqvist/soma-logger</a></h3> <p>Simple integration of Monolog with SOMA</p> </li> </ul> </div> </div> </div>
+</section>
+<section id="readme" class="bg-light section-pb"> <div class="container container-mw-md"> <div class="row"> <div class="col-12"> <h2 class="text-center text-uppercase">ReadMe</h2> <html><head></head><body><h3>Installation</h3>
+<p><em>Soma requires composer for dependency management</em></p>
+<pre><code class="lang-sh">composer require soma/soma
+</code></pre>
+<p>If you want to start an entirely new project rather than integrating it into your current solution you can use <a href="https://github.com/soma-php/project">soma/project</a> as scaffolding:</p>
+<pre><code class="lang-sh">composer create-project soma/project [project-directory]
+</code></pre>
+<p>The required paths need to be created by the framework before you can run your application. You can do so either by executing <code>install()</code> on a configured instance of <code>Application</code> or by running the <code>app:install</code> command.</p>
+<pre><code class="lang-sh">php appctrl app:install
+</code></pre>
+<h3>Usage</h3>
+<h4>Setup</h4>
+<p>All essential configuration can be set via the <code>Soma\Application</code> instance or by creating a <code>.env</code> file in the root of your project.</p>
+<pre><code class="lang-sh">APP_URL=&quot;http://localhost:8000&quot;
+APP_STAGE=&quot;development&quot;
+APP_TIMEZONE=&quot;Europe/Stockholm&quot;
+APP_DEBUG=true
+APP_OPTIMIZE=false
+APP_CONFIG=&quot;/absolute/path/to/your/config/folder&quot;
+APP_STORAGE=&quot;/absolute/path/to/your/storage/folder&quot;
+</code></pre>
+<pre><code class="lang-php">require __DIR__.&apos;/../vendor/autoload.php&apos;;
+
+use Soma\Application;
+
+$app = Application::getInstance()
+    -&gt;setRootPath(__DIR__)
+    -&gt;setRootUrl(&apos;http://localhost:8000/&apos;)
+    -&gt;setPath(&apos;storage&apos;, &apos;/absolute/path/to/your/storage/folder&apos;)
+    -&gt;registerConfig(&apos;/absolute/path/to/your/config/folder&apos;)
+    -&gt;init();
+</code></pre>
+<p><em>The storage directory needs to be writable by the application.</em></p>
+<p>Using the <code>.env</code> file is the recommended approach (<a href="https://github.com/vlucas/phpdotenv#readme">info</a>) and it allows one to easily create a web entry-point as well as a cli with minimal setup:</p>
+<p><strong>index.php</strong></p>
+<pre><code class="lang-php">require __DIR__.&apos;/../vendor/autoload.php&apos;;
+
+use Soma\Application;
+
+$app = Application::getInstance();
+
+$app-&gt;init(__DIR__);
+</code></pre>
+<p><strong>appctrl</strong></p>
+<pre><code class="lang-php">#!/usr/bin/env php
+
+require __DIR__.&apos;/vendor/autoload.php&apos;;
+
+use Soma\Console;
+use Soma\Application;
+
+$app = Application::getInstance();
+$app-&gt;init(__DIR__.&apos;/public&apos;);
+
+$app-&gt;getConsole()-&gt;run();
+</code></pre>
+<h4>Configuration</h4>
+<p>Configuration files can be PHP files returning arrays (recommended) or JSON, YAML and INI configuration files:</p>
+<p><strong>config/app.php</strong></p>
+<pre><code class="lang-php">return [
+    &apos;name&apos; =&gt; &apos;My App&apos;,
+    &apos;version&apos; =&gt; &apos;1.0.0&apos;,
+    &apos;date-format&apos; =&gt; &apos;%Y-%m-%d&apos;,
+    &apos;timezone&apos; =&gt; &apos;Europe/Stockholm&apos;,
+    &apos;providers&apos; =&gt; [
+        \Soma\Providers\EventsProvider::class,
+        \MyApp\Providers\RoutingProvider::class,
+        \MyApp\Providers\CacheProvider::class,
+    ],
+    &apos;aliases&apos; =&gt; [
+        &apos;ServiceProvider&apos; =&gt; \Soma\ServiceProvider::class,
+        &apos;Container&apos; =&gt; \Psr\Container\ContainerInterface::class,
+        &apos;Collection&apos; =&gt; \Illuminate\Support\Collection::class,
+        &apos;Repository&apos; =&gt; \Soma\Repository::class,
+        &apos;Store&apos; =&gt; \Soma\Store::class,
+        &apos;Event&apos; =&gt; \Symfony\Component\EventDispatcher\Event::class,
+        &apos;GenericEvent&apos; =&gt; \Symfony\Component\EventDispatcher\GenericEvent::class,
+
+        &apos;App&apos; =&gt; \Soma\Facades\App::class,
+        &apos;Config&apos; =&gt; \Soma\Facades\Config::class,
+        &apos;Event&apos; =&gt; \Soma\Facades\Event::class,
+    ],
+    &apos;commands&apos; =&gt; [
+        \Soma\Commands\AppInstall::class,
+        \Soma\Commands\AppUninstall::class,
+        \Soma\Commands\AppRefresh::class,
+        \Soma\Commands\AppTinker::class,
+        \Soma\Commands\AppServe::class,
+        \Soma\Commands\AppClearCache::class,
+    ],
+];
+</code></pre>
+<p>These values are then retrievable either via the <code>Config</code> facade or a helper function using dot-notation, namespaced by the name of the config file:</p>
+<pre><code class="lang-php">$appName = config(&apos;app.name&apos;);
+</code></pre>
+<h4>Services</h4>
+<p>The service providers are how you can modularly add in functionality to your application. The <code>ServiceProvider</code> class has been designed to be compatible with <code>Illuminate\Support\ServiceProvider</code> and should be able to register them as well as long as they don&apos;t call any Laravel specific code. It&apos;s also been designed according to the now deprecated <a href="https://github.com/container-interop/service-provider">ContainerInterop</a> standard. Unfortunately the extension definitions have the arguments reversed in SOMA for compatibility with PHP-DI, the container library. A typical <code>ServiceProvider</code> may look like the following:</p>
+<pre><code class="lang-php">namespace MyApp\Providers;
+
+use Soma\Store;
+use Soma\ServiceProvider;
+use Psr\Container\ContainerInterface;
+
+use MyRouter;
+
+class RoutingProvider extends ServiceProvider
+{
+    public function ready(ContainerInterface $c) : void
+    {
+        if (! is_cli()) {
+            $c-&gt;get(&apos;router&apos;)-&gt;resolveRequest();
+        }
+    }
+
+    public function getFactories() : array
+    {
+        return [
+            &apos;router&apos; =&gt; function(ContainerInterface $c) {
+                return new MyRouter();
+            },
+        ];
+    }
+
+    public function getExtensions() : array
+    {
+        return [
+            &apos;paths&apos; =&gt; function(Store $paths, ContainerInterface $c) {
+                $paths[&apos;admin&apos;] = realpath(__DIR__.&apos;/../&apos;);
+                $paths[&apos;admin.assets&apos;] = $paths[&apos;admin&apos;].&apos;/assets&apos;);
+
+                return $paths;
+            },
+            &apos;urls&apos; =&gt; function(Store $urls, ContainerInterface $c) {
+                $urls[&apos;admin&apos;] = $urls[&apos;root&apos;].&apos;/admin&apos;;
+
+                return $urls;
+            },
+        ];
+    }
+}
+</code></pre>
+<p>All definitions from <code>getExtensions</code> are automatically wrapped with <code>DI\decorate</code> so that those changes gets applied whenever you resolve a definition from the container. However, you can use any <a href="http://php-di.org/doc/php-definitions.html#definition-types">PHP-DI definition type</a> for both <code>getFactories</code> and <code>getExtensions</code> and the result of the latter isn&apos;t wrapped if it&apos;s already been wrapped by PHP-DI.</p>
+<p>Check out the <a href="https://github.com/soma-php/soma/blob/master/src/ServiceProvider.php">source code</a> to see all <em>ServiceProvider</em> features.</p>
+<h4>Commands</h4>
+<p>The console engine is built on <code>Illuminate\Console</code> and the commands are defined in the same manner as in <a href="https://laravel.com/docs/7.0/artisan">Laravel 7.0</a>. For example:</p>
+<pre><code class="lang-php">namespace MyApp\Commands;
+
+use Soma\Command;
+
+class HelloWorld extends Command
+{
+    protected $signature = &apos;say:hello {who?}&apos;;
+    protected $description = &apos;Say hello to the world.&apos;;
+
+    public function handle()
+    {
+        $who = $this-&gt;argument(&apos;who&apos;, &apos;world&apos;);
+
+        $this-&gt;info(&apos;Hello &apos;.$who.&apos;!&apos;);
+    }
+}
+</code></pre>
+<p>As long as the command has been registered it can be executed either via <code>Application::runCommand</code> or a console script:</p>
+<pre><code class="lang-sh">php appctrl say:hello &quot;everybody&quot;
+</code></pre>
+<h5>Predefined commands</h5>
+<h6>app:tinker</h6>
+<p>The <em>tinker</em> command starts an interactive PHP shell within the application environment - an effective way to test code or make quick changes to data using the application API.</p>
+<h6>app:install</h6>
+<p>The <em>install</em> command should be run before you start coding to make sure all necessary directories have been created. By default the application creates a symbolic link to a sub-folder of the storage directory in the public directory in order to be able to serve cached or uploaded resources. Other service providers can implement the <code>install</code> <a href="https://github.com/soma-php/framework/blob/master/src/Commands/Contracts/ServiceProviderInterface.php">method</a> and do necessary filesystem changes that the normal web server user wouldn&apos;t be able to (it&apos;s recommended to leave the web root read-only for the web server).</p>
+<p>The framework keeps track of which service providers have been installed and which hasn&apos;t, so if new services are added they can be run with the same command without risking running procedures multiple times from one provider. Any single provider can be called on its own by specifying the fully qualified class name of the provider as an argument to the command.</p>
+<h6>app:uninstall</h6>
+<p>The command is <a href="https://github.com/soma-php/framework/blob/master/src/Commands/Contracts/ServiceProviderInterface.php">implemented</a> the same way as <em>install</em> and is meant to reverse the changes made during installation.</p>
+<h6>app:refresh</h6>
+<p>If there are times one would like to make filesystem changes depending on the state of other components (for example when configuration changes) then <em>refresh</em> can be <a href="https://github.com/soma-php/framework/blob/master/src/Commands/Contracts/ServiceProviderInterface.php">implemented</a> to handle those use cases. For example a &quot;theme&quot; service that requires a symbolic link to the active theme&apos;s assets in the public directory.</p>
+<h6>app:serve</h6>
+<p>The command starts the internal PHP web server in the public directory to allow one to quickly set up a development environment without the need for a fully featured HTTP server.</p>
+<h6>app:clear-cache</h6>
+<p>The <em>clear-cache</em> commands deletes by default the generated files by <code>Application</code> and provides functionality to hook in other service&apos;s procedures for emptying their cache. The framework uses a <a href="https://symfony.com/doc/4.4/event_dispatcher.html">PSR-14 event system</a> internally that can be easily consumed by your own app by registering the <code>Soma\Providers\EventsProvider</code> service provider. Whenever the command is run the framework dispatches the event <code>app.cache.clear</code> which you can hook your own logic into by registering a listener (see definition for the <code>listen</code> helper in <a href="https://github.com/soma-php/framework/blob/master/src/helpers.php">helpers.php</a>).</p>
+<p>All paths registered under the cache namespace (e.g. <code>cache.storage</code>) can be automatically handled without having to define your own custom logic. They are automatically emptied/removed when the command is run or if it is specifically targeted when executing the command: <code>php appctrl app:cache-clear storage</code></p>
+<h4>Helpers</h4>
+<p>The file <a href="https://github.com/soma-php/soma/blob/master/src/helpers.php">helpers.php</a> contain a couple of functions that are meant to simplify either calling app services or work with certain types of data. There&apos;s also useful classes for working with data-sets like <code>Soma\Store</code>, <code>Soma\Repository</code> and <code>Soma\Manifest</code> (checkout the <a href="https://github.com/soma-php/soma/tree/master/src">source</a>). The framework also depends on <code>illuminate\support</code> that provide <a href="https://github.com/illuminate/support/tree/826782d01ec7a0befe26b106713822df5933ee69">a whole bunch of helpers</a> for you to make use of.</p>
+<h3>License</h3>
+<p>MIT</p>
+</body></html> </div> </div> </div>
+</section>
+<section id="helpers" class="section-p"> <div class="container container-mw-md"> <div class="row"> <div class="col-12"> <h2 class="text-center text-uppercase">Helpers</h2> <ul> <li><a href="#helpers_app">app</a></li> <li><a href="#helpers_should_optimize">should_optimize</a></li> <li><a href="#helpers_is_debug">is_debug</a></li> <li><a href="#helpers_is_ajax">is_ajax</a></li> <li><a href="#helpers_is_cli">is_cli</a></li> <li><a href="#helpers_is_web">is_web</a></li> <li><a href="#helpers_app_stage">app_stage</a></li> <li><a href="#helpers_app_path">app_path</a></li> <li><a href="#helpers_app_url">app_url</a></li> <li><a href="#helpers_public_path">public_path</a></li> <li><a href="#helpers_public_url">public_url</a></li> <li><a href="#helpers_module_url">module_url</a></li> <li><a href="#helpers_storage_path">storage_path</a></li> <li><a href="#helpers_get_path">get_path</a></li> <li><a href="#helpers_get_url">get_url</a></li> <li><a href="#helpers_config">config</a></li> <li><a href="#helpers_event">event</a></li> <li><a href="#helpers_listen">listen</a></li> <li><a href="#helpers_run_command">run_command</a></li> <li><a href="#helpers_is_valid">is_valid</a></li> <li><a href="#helpers_make_datetime">make_datetime</a></li> <li><a href="#helpers_format_date">format_date</a></li> <li><a href="#helpers_validate_date">validate_date</a></li> <li><a href="#helpers_empty_dir">empty_dir</a></li> <li><a href="#helpers_runlink">runlink</a></li> <li><a href="#helpers_canonicalize_path">canonicalize_path</a></li> <li><a href="#helpers_make_numeric">make_numeric</a></li> <li><a href="#helpers_is_booly">is_booly</a></li> <li><a href="#helpers_make_bool">make_bool</a></li> <li><a href="#helpers_ensure_dir_exists">ensure_dir_exists</a></li> <li><a href="#helpers_is_url">is_url</a></li> <li><a href="#helpers_parse_attributes">parse_attributes</a></li> <li><a href="#helpers_common_path">common_path</a></li> <li><a href="#helpers_remove_double_slashes">remove_double_slashes</a></li> <li><a href="#helpers_build_url">build_url</a></li> <li><a href="#helpers_rel_path">rel_path</a></li> </ul> <hr> <h4 id="helpers_app"> <span class="font-weight-bold">app</span> <span class="text-muted"> : <i>mixed</i></span> </h4> <p class="lead font-italic text-muted">Resolve a dependency from the container</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string|null</span> - <strong>$abstract</strong> - If null then the \Soma\Application instance itself </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_app_code" role="button" aria-expanded="false" aria-controls="helpers_app_code"> Toggle Code </a> <div class="collapse" id="helpers_app_code"> <pre><code class="lang-php">function app($abstract = null)
+{
+    $app = \Soma\Application::getInstance();
+
+    if (is_null($abstract)) {
+        return $app;
+    }
+
+    return $app->get($abstract);
+}</code></pre> </div> <hr> <h4 id="helpers_should_optimize"> <span class="font-weight-bold">should_optimize</span> <span class="text-muted"> : <i>boolean</i></span> </h4> <p class="lead font-italic text-muted">Checks whether APP_OPTIMIZE is true</p> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_should_optimize_code" role="button" aria-expanded="false" aria-controls="helpers_should_optimize_code"> Toggle Code </a> <div class="collapse" id="helpers_should_optimize_code"> <pre><code class="lang-php">function should_optimize() : bool
+{
+    return app()->isPerformanceMode();
+}</code></pre> </div> <hr> <h4 id="helpers_is_debug"> <span class="font-weight-bold">is_debug</span> <span class="text-muted"> : <i>boolean</i></span> </h4> <p class="lead font-italic text-muted">Checks whether APP_DEBUG is true</p> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_is_debug_code" role="button" aria-expanded="false" aria-controls="helpers_is_debug_code"> Toggle Code </a> <div class="collapse" id="helpers_is_debug_code"> <pre><code class="lang-php">function is_debug() : bool
+{
+    return app()->isDebug();
+}</code></pre> </div> <hr> <h4 id="helpers_is_ajax"> <span class="font-weight-bold">is_ajax</span> <span class="text-muted"> : <i>boolean</i></span> </h4> <p class="lead font-italic text-muted">Checks if the application is responding to an AJAX request</p> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_is_ajax_code" role="button" aria-expanded="false" aria-controls="helpers_is_ajax_code"> Toggle Code </a> <div class="collapse" id="helpers_is_ajax_code"> <pre><code class="lang-php">function is_ajax() : bool
+{
+    return app()->isAjaxRequest();
+}</code></pre> </div> <hr> <h4 id="helpers_is_cli"> <span class="font-weight-bold">is_cli</span> <span class="text-muted"> : <i>boolean</i></span> </h4> <p class="lead font-italic text-muted">Checks if the application is run via the command line interface</p> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_is_cli_code" role="button" aria-expanded="false" aria-controls="helpers_is_cli_code"> Toggle Code </a> <div class="collapse" id="helpers_is_cli_code"> <pre><code class="lang-php">function is_cli() : bool
+{
+    return app()->isCommandLine();
+}</code></pre> </div> <hr> <h4 id="helpers_is_web"> <span class="font-weight-bold">is_web</span> <span class="text-muted"> : <i>boolean</i></span> </h4> <p class="lead font-italic text-muted">Checks if the application is responding to a regular web request</p> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_is_web_code" role="button" aria-expanded="false" aria-controls="helpers_is_web_code"> Toggle Code </a> <div class="collapse" id="helpers_is_web_code"> <pre><code class="lang-php">function is_web() : bool
+{
+    return app()->isWebRequest();
+}</code></pre> </div> <hr> <h4 id="helpers_app_stage"> <span class="font-weight-bold">app_stage</span> <span class="text-muted"> : <i>boolean|string</i></span> </h4> <p class="lead font-italic text-muted">Test string against APP_STAGE</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">$test</span> - <strong>If</strong> - omitted then the current stage will be returned </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_app_stage_code" role="button" aria-expanded="false" aria-controls="helpers_app_stage_code"> Toggle Code </a> <div class="collapse" id="helpers_app_stage_code"> <pre><code class="lang-php">function app_stage($test = '')
+{
+    if (! empty($test)) {
+        return app()->isStage($test);
+    }
+    else {
+        return app()->getStage();
+    }
+}</code></pre> </div> <hr> <h4 id="helpers_app_path"> <span class="font-weight-bold">app_path</span> <span class="text-muted"> : <i>string</i></span> </h4> <p class="lead font-italic text-muted">Get the path to the application folder or a resource relative to its root</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string</span> - <strong>[$path]</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_app_path_code" role="button" aria-expanded="false" aria-controls="helpers_app_path_code"> Toggle Code </a> <div class="collapse" id="helpers_app_path_code"> <pre><code class="lang-php">function app_path($path = '') : string
+{
+    return app()->getRootPath($path);
+}</code></pre> </div> <hr> <h4 id="helpers_app_url"> <span class="font-weight-bold">app_url</span> <span class="text-muted"> : <i>string</i></span> </h4> <p class="lead font-italic text-muted">Get the URL to the application folder or a resource relative to its root</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string</span> - <strong>[$url]</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_app_url_code" role="button" aria-expanded="false" aria-controls="helpers_app_url_code"> Toggle Code </a> <div class="collapse" id="helpers_app_url_code"> <pre><code class="lang-php">function app_url($url = '') : string
+{
+    return app()->getRootUrl($url);
+}</code></pre> </div> <hr> <h4 id="helpers_public_path"> <span class="font-weight-bold">public_path</span> <span class="text-muted"> : <i>string</i></span> </h4> <p class="lead font-italic text-muted">Get the path to the public folder or a resource relative to its root</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string</span> - <strong>[$path]</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_public_path_code" role="button" aria-expanded="false" aria-controls="helpers_public_path_code"> Toggle Code </a> <div class="collapse" id="helpers_public_path_code"> <pre><code class="lang-php">function public_path($path = '') : string
+{
+    return app_path($path);
+}</code></pre> </div> <hr> <h4 id="helpers_public_url"> <span class="font-weight-bold">public_url</span> <span class="text-muted"> : <i>string</i></span> </h4> <p class="lead font-italic text-muted">Get the url to the public folder or a resource relative to its root</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string</span> - <strong>[$url]</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_public_url_code" role="button" aria-expanded="false" aria-controls="helpers_public_url_code"> Toggle Code </a> <div class="collapse" id="helpers_public_url_code"> <pre><code class="lang-php">function public_url($url = '') : string
+{
+    return app_url($url);
+}</code></pre> </div> <hr> <h4 id="helpers_module_url"> <span class="font-weight-bold">module_url</span> <span class="text-muted"> : <i>string</i></span> </h4> <p class="lead font-italic text-muted">Get the url for a module resource or its root</p> <p>The module helper is simply building an URL according what's recommended as best practice for modules to serve content.</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string</span> - <strong>[$path]</strong> </li> <li> <span class="text-muted font-italic">string</span> - <strong>[$url]</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_module_url_code" role="button" aria-expanded="false" aria-controls="helpers_module_url_code"> Toggle Code </a> <div class="collapse" id="helpers_module_url_code"> <pre><code class="lang-php">function module_url(string $module, $url = '') : string
+{
+    return get_url('extensions.public').'/'.$module.($url ? '/'.$url : $url);
+}</code></pre> </div> <hr> <h4 id="helpers_storage_path"> <span class="font-weight-bold">storage_path</span> <span class="text-muted"> : <i>string</i></span> </h4> <p class="lead font-italic text-muted">Get the path to the storage folder or a resource relative to its root</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string</span> - <strong>[$path]</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_storage_path_code" role="button" aria-expanded="false" aria-controls="helpers_storage_path_code"> Toggle Code </a> <div class="collapse" id="helpers_storage_path_code"> <pre><code class="lang-php">function storage_path($path = '') : string
+{
+    return get_path('storage').($path ? '/'.$path : $path);
+}</code></pre> </div> <hr> <h4 id="helpers_get_path"> <span class="font-weight-bold">get_path</span> <span class="text-muted"> : <i>string</i></span> </h4> <p class="lead font-italic text-muted">Get a specific named path registered with the application</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string</span> - <strong>$name</strong> </li> <li> <span class="text-muted font-italic">string|null</span> - <strong>[$default]</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_get_path_code" role="button" aria-expanded="false" aria-controls="helpers_get_path_code"> Toggle Code </a> <div class="collapse" id="helpers_get_path_code"> <pre><code class="lang-php">function get_path($name, $default = null)
+{
+    return app()->paths()->get($name, $default);
+}</code></pre> </div> <hr> <h4 id="helpers_get_url"> <span class="font-weight-bold">get_url</span> <span class="text-muted"> : <i>string</i></span> </h4> <p class="lead font-italic text-muted">Get a specific named URL registered with the application</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string</span> - <strong>$name</strong> </li> <li> <span class="text-muted font-italic">string|null</span> - <strong>[$default]</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_get_url_code" role="button" aria-expanded="false" aria-controls="helpers_get_url_code"> Toggle Code </a> <div class="collapse" id="helpers_get_url_code"> <pre><code class="lang-php">function get_url($name, $default = null)
+{
+    return app()->urls()->get($name, $default);
+}</code></pre> </div> <hr> <h4 id="helpers_config"> <span class="font-weight-bold">config</span> <span class="text-muted"> : <i>mixed</i></span> </h4> <p class="lead font-italic text-muted">Get the specified configuration value.</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string</span> - <strong>$key</strong> - A key namespaced using dot-notation </li> <li> <span class="text-muted font-italic">mixed</span> - <strong>[$default]</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_config_code" role="button" aria-expanded="false" aria-controls="helpers_config_code"> Toggle Code </a> <div class="collapse" id="helpers_config_code"> <pre><code class="lang-php">function config(string $key, $default = null)
+{
+    return app('config')->get($key, $default);
+}</code></pre> </div> <hr> <h4 id="helpers_event"> <span class="font-weight-bold">event</span> <span class="text-muted"> : <i>array|null</i></span> </h4> <p class="lead font-italic text-muted">Trigger an event</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string|object</span> - <strong>$event</strong> </li> <li> <span class="text-muted font-italic">mixed</span> - <strong>[$payload]</strong> </li> <li> <span class="text-muted font-italic">boolean</span> - <strong>[$halt]</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_event_code" role="button" aria-expanded="false" aria-controls="helpers_event_code"> Toggle Code </a> <div class="collapse" id="helpers_event_code"> <pre><code class="lang-php">function event($event, $payload = [], $halt = false)
+{
+    return app()->getEventDispatcher()->dispatch($event, $payload, $halt);
+}</code></pre> </div> <hr> <h4 id="helpers_listen"> <span class="font-weight-bold">listen</span> <span class="text-muted"> : <i>void</i></span> </h4> <p class="lead font-italic text-muted">Register an event listener</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string|array</span> - <strong>$events</strong> </li> <li> <span class="text-muted font-italic">mixed</span> - <strong>$listener</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_listen_code" role="button" aria-expanded="false" aria-controls="helpers_listen_code"> Toggle Code </a> <div class="collapse" id="helpers_listen_code"> <pre><code class="lang-php">function listen($events, $listener) : void
+{
+    app()->getEventDispatcher()->listen($events, $listener);
+}</code></pre> </div> <hr> <h4 id="helpers_run_command"> <span class="font-weight-bold">run_command</span> <span class="text-muted"> : <i>int</i></span> </h4> <p class="lead font-italic text-muted">Call a console command</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string</span> - <strong>$command</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_run_command_code" role="button" aria-expanded="false" aria-controls="helpers_run_command_code"> Toggle Code </a> <div class="collapse" id="helpers_run_command_code"> <pre><code class="lang-php">function run_command(string $command) : int
+{
+    return app()->runCommand($command);
+}</code></pre> </div> <hr> <h4 id="helpers_is_valid"> <span class="font-weight-bold">is_valid</span> <span class="text-muted"> : <i>boolean</i></span> </h4> <p class="lead font-italic text-muted">Attempt to determine if the object is created correctly</p> <p>Classes can implement \Soma\Contracts\ValidityChecking to make use of the this feature better.</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">mixed</span> - <strong>$object</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_is_valid_code" role="button" aria-expanded="false" aria-controls="helpers_is_valid_code"> Toggle Code </a> <div class="collapse" id="helpers_is_valid_code"> <pre><code class="lang-php">function is_valid($object) : bool
+{
+    if (($object instanceof \Soma\Contracts\ValidityChecking || method_exists($object, '__validate')) && $object->__validate()) {
+        return true;
+    }
+    elseif (! is_null($object)) {
+        return true;
+    }
+
+    return false;
+}</code></pre> </div> <hr> <h4 id="helpers_make_datetime"> <span class="font-weight-bold">make_datetime</span> <span class="text-muted"> : <i>\DateTime</i></span> </h4> <p class="lead font-italic text-muted">Convert a date into a datetime</p> <p>If a format isn't set then the DATE_FORMAT constant will be used, and if that isn't defined then DateTime::ISO8601 will be used as fallback.</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string|int</span> - <strong>$date_str</strong> </li> <li> <span class="text-muted font-italic">string|null</span> - <strong>[$format]</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_make_datetime_code" role="button" aria-expanded="false" aria-controls="helpers_make_datetime_code"> Toggle Code </a> <div class="collapse" id="helpers_make_datetime_code"> <pre><code class="lang-php">function make_datetime($date_str, $format = null)
+{
+    if (empty($format)) {
+        if (is_int($date_str))
+            $format = 'U';
+        elseif (defined('DATE_FORMAT'))
+            $format = DATE_FORMAT;
+        else
+            $format = \DateTime::ISO8601;
+    }
+
+    return \DateTime::createFromFormat($format, $date_str);
+}</code></pre> </div> <hr> <h4 id="helpers_format_date"> <span class="font-weight-bold">format_date</span> <span class="text-muted"> : <i>string</i></span> </h4> <p class="lead font-italic text-muted">Format a \DateTime</p> <p>Will use DATE_FORMAT if defined and simply guess the format if not</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">\DateTime</span> - <strong>\DateTime</strong> - $date </li> <li> <span class="text-muted font-italic">string|null</span> - <strong>[$format]</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_format_date_code" role="button" aria-expanded="false" aria-controls="helpers_format_date_code"> Toggle Code </a> <div class="collapse" id="helpers_format_date_code"> <pre><code class="lang-php">function format_date($date, $format = null)
+{
+    if (is_null($format) && defined('DATE_FORMAT')) {
+        $format = DATE_FORMAT;
+    }
+
+    if ($date instanceof \DateTime) {
+        return $date->format($format);
+    }
+
+    return $date;
+}</code></pre> </div> <hr> <h4 id="helpers_validate_date"> <span class="font-weight-bold">validate_date</span> <span class="text-muted"> : <i>bool</i></span> </h4> <p class="lead font-italic text-muted">Determine if a date is valid</p> <p>Will use DATE_FORMAT if defined and simply guess the format if not</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string</span> - <strong>$date</strong> </li> <li> <span class="text-muted font-italic">string|null</span> - <strong>[$format]</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_validate_date_code" role="button" aria-expanded="false" aria-controls="helpers_validate_date_code"> Toggle Code </a> <div class="collapse" id="helpers_validate_date_code"> <pre><code class="lang-php">function validate_date($date, $format = null) : bool
+{
+    if (is_null($format) && defined('DATE_FORMAT')) {
+        $format = DATE_FORMAT;
+    }
+
+    $d = \DateTime::createFromFormat($format, $date);
+    return $d && $d->format($format) === $date;
+}</code></pre> </div> <hr> <h4 id="helpers_empty_dir"> <span class="font-weight-bold">empty_dir</span> <span class="text-muted"> : <i>boolean</i></span> </h4> <p class="lead font-italic text-muted">Empty the children of a directory</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string</span> - <strong>$path</strong> </li> <li> <span class="text-muted font-italic">boolean</span> - <strong>[$recursive]</strong> </li> <li> <span class="text-muted font-italic">boolean</span> - <strong>[$preserveDirs]</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_empty_dir_code" role="button" aria-expanded="false" aria-controls="helpers_empty_dir_code"> Toggle Code </a> <div class="collapse" id="helpers_empty_dir_code"> <pre><code class="lang-php">function empty_dir($path, $recursive = true, $preserveDirs = false) : bool
+{
+    if (! is_dir($path)) {
+        return false;
+    }
+
+    foreach (glob($path.'/*') ?: [] as $file) {
+        if (is_dir($file)) {
+            if (! $recursive) {
+                continue;
+            }
+
+            if ($preserveDirs) {
+                empty_dir($file, true, true);
+            } else {
+                runlink($file);
+            }
+        } else {
+            unlink($file);
+        }
+    }
+
+    return true;
+}</code></pre> </div> <hr> <h4 id="helpers_runlink"> <span class="font-weight-bold">runlink</span> <span class="text-muted"> : <i>bool</i></span> </h4> <p class="lead font-italic text-muted">Recursive unlink</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string</span> - <strong>$path</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_runlink_code" role="button" aria-expanded="false" aria-controls="helpers_runlink_code"> Toggle Code </a> <div class="collapse" id="helpers_runlink_code"> <pre><code class="lang-php">function runlink($path) : bool
+{
+    if (! is_dir($path)) {
+        return false;
+    }
+
+    $di = new \RecursiveDirectoryIterator($path, \FilesystemIterator::SKIP_DOTS);
+    $ri = new \RecursiveIteratorIterator($di, \RecursiveIteratorIterator::CHILD_FIRST);
+
+    foreach ($ri as $file) {
+        $file->isDir() ? rmdir($file) : unlink($file);
+    }
+
+    return rmdir($path);
+}</code></pre> </div> <hr> <h4 id="helpers_canonicalize_path"> <span class="font-weight-bold">canonicalize_path</span> <span class="text-muted"> : <i>string</i></span> </h4> <p class="lead font-italic text-muted">Will resolve &quot;../&quot; and &quot;./&quot;</p> <p>An alternative to using realpath if you wish to avoid resolving symlinks</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string</span> - <strong>$address</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_canonicalize_path_code" role="button" aria-expanded="false" aria-controls="helpers_canonicalize_path_code"> Toggle Code </a> <div class="collapse" id="helpers_canonicalize_path_code"> <pre><code class="lang-php">function canonicalize_path($address) : string
+{
+    $address = explode('/', $address);
+    $keys = array_keys($address, '..');
+
+    foreach($keys as $keypos => $key) {
+        array_splice($address, $key - ($keypos * 2 + 1), 2);
+    }
+
+    $address = implode('/', $address);
+    $address = str_replace('./', '', $address);
+
+    return $address;
+}</code></pre> </div> <hr> <h4 id="helpers_make_numeric"> <span class="font-weight-bold">make_numeric</span> <span class="text-muted"> : <i>int|float</i></span> </h4> <p class="lead font-italic text-muted">Convert string to a numeric</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string</span> - <strong>$val</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_make_numeric_code" role="button" aria-expanded="false" aria-controls="helpers_make_numeric_code"> Toggle Code </a> <div class="collapse" id="helpers_make_numeric_code"> <pre><code class="lang-php">function make_numeric($val)
+{
+    if (is_numeric($val)) {
+        return $val + 0;
+    }
+
+    return 0;
+}</code></pre> </div> <hr> <h4 id="helpers_is_booly"> <span class="font-weight-bold">is_booly</span> <span class="text-muted"> : <i>boolean</i></span> </h4> <p class="lead font-italic text-muted">Check whether a string has a &quot;booly&quot; value</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string</span> - <strong>$val</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_is_booly_code" role="button" aria-expanded="false" aria-controls="helpers_is_booly_code"> Toggle Code </a> <div class="collapse" id="helpers_is_booly_code"> <pre><code class="lang-php">function is_booly($val) : bool
+{
+    switch (strtolower($val)) {
+        case "y":
+        case "yes":
+        case "(yes)":
+        case "true":
+        case "(true)":
+        case "n":
+        case "no":
+        case "(no)":
+        case "false":
+        case "(false)":
+            return true;
+    }
+
+    return false;
+}</code></pre> </div> <hr> <h4 id="helpers_make_bool"> <span class="font-weight-bold">make_bool</span> <span class="text-muted"> : <i>bool</i></span> </h4> <p class="lead font-italic text-muted">Convert object into its boolean value</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">mixed</span> - <strong>$val</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_make_bool_code" role="button" aria-expanded="false" aria-controls="helpers_make_bool_code"> Toggle Code </a> <div class="collapse" id="helpers_make_bool_code"> <pre><code class="lang-php">function make_bool($val) : bool
+{
+    if (is_bool($val)) {
+        return $val;
+    }
+    
+    switch (strtolower($val)) {
+        case "y":
+        case "yes":
+        case "(yes)":
+        case "true":
+        case "(true)":
+            return true;
+        case "n":
+        case "no":
+        case "(no)":
+        case "false":
+        case "(false)":
+            return false;
+    }
+
+    return boolval($val);
+}</code></pre> </div> <hr> <h4 id="helpers_ensure_dir_exists"> <span class="font-weight-bold">ensure_dir_exists</span> <span class="text-muted"> : <i>string</i></span> </h4> <p class="lead font-italic text-muted">Creates directory recursively if it doesn&#x27;t exist and returns it</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string</span> - <strong>$path</strong> </li> <li> <span class="text-muted font-italic">integer</span> - <strong>$permissions</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_ensure_dir_exists_code" role="button" aria-expanded="false" aria-controls="helpers_ensure_dir_exists_code"> Toggle Code </a> <div class="collapse" id="helpers_ensure_dir_exists_code"> <pre><code class="lang-php">function ensure_dir_exists($path, $permissions = 0775)
+{
+    if (! file_exists($path)) {
+        mkdir($path, $permissions, true);
+    }
+
+    return $path;
+}</code></pre> </div> <hr> <h4 id="helpers_is_url"> <span class="font-weight-bold">is_url</span> <span class="text-muted"> : <i>boolean</i></span> </h4> <p class="lead font-italic text-muted">Checks whether a string is an URL</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string</span> - <strong>$url</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_is_url_code" role="button" aria-expanded="false" aria-controls="helpers_is_url_code"> Toggle Code </a> <div class="collapse" id="helpers_is_url_code"> <pre><code class="lang-php">function is_url(string $url) : bool
+{
+    return (filter_var($url, FILTER_VALIDATE_URL)) ? true : false;
+}</code></pre> </div> <hr> <h4 id="helpers_parse_attributes"> <span class="font-weight-bold">parse_attributes</span> <span class="text-muted"> : <i>string</i></span> </h4> <p class="lead font-italic text-muted">Combines an associative array into an HTML attribute string</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">array</span> - <strong>$attr</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_parse_attributes_code" role="button" aria-expanded="false" aria-controls="helpers_parse_attributes_code"> Toggle Code </a> <div class="collapse" id="helpers_parse_attributes_code"> <pre><code class="lang-php">function parse_attributes(array $attr = []) : string
+{
+    return join(' ', array_map(function($key) use ($attr) {
+       if (is_bool($attr[$key])) {
+          return $attr[$key] ? $key : '';
+       }
+
+       if (is_array($attr[$key])) {
+           return $key.'="'.implode(' ', $attr[$key]).'"';
+       }
+       else {
+           return $key.'="'.$attr[$key].'"';
+       }
+    }, array_keys($attr)));
+}</code></pre> </div> <hr> <h4 id="helpers_common_path"> <span class="font-weight-bold">common_path</span> <span class="text-muted"> : <i>string</i></span> </h4> <p class="lead font-italic text-muted">Returns the lowest common directory of array of paths</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">array</span> - <strong>$paths</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_common_path_code" role="button" aria-expanded="false" aria-controls="helpers_common_path_code"> Toggle Code </a> <div class="collapse" id="helpers_common_path_code"> <pre><code class="lang-php">function common_path(array $paths) : string
+{
+    $lastOffset = 1;
+    $common = '/';
+
+    while (($index = strpos($paths[0], '/', $lastOffset)) !== false) {
+        $dirLen = $index - $lastOffset + 1;	// include /
+        $dir = substr($paths[0], $lastOffset, $dirLen);
+
+        foreach ($paths as $path) {
+            if (substr($path, $lastOffset, $dirLen) != $dir) {
+                return $common;
+            }
+        }
+
+        $common .= $dir;
+        $lastOffset = $index + 1;
+    }
+
+    return substr($common, 0, -1);
+}</code></pre> </div> <hr> <h4 id="helpers_remove_double_slashes"> <span class="font-weight-bold">remove_double_slashes</span> <span class="text-muted"> : <i>string</i></span> </h4> <p class="lead font-italic text-muted">Remove double forward slashes from string</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string</span> - <strong>$path</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_remove_double_slashes_code" role="button" aria-expanded="false" aria-controls="helpers_remove_double_slashes_code"> Toggle Code </a> <div class="collapse" id="helpers_remove_double_slashes_code"> <pre><code class="lang-php">function remove_double_slashes(string $path) : string
+{
+    $path = str_replace('//', '/', $path);
+    $path = str_replace('//', '/', $path);
+    return $path;
+}</code></pre> </div> <hr> <h4 id="helpers_build_url"> <span class="font-weight-bold">build_url</span> <span class="text-muted"> : <i>string</i></span> </h4> <p class="lead font-italic text-muted">Construct an URL from an array</p> <p>See PHP documentation for parse_url</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">array</span> - <strong>$parts</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_build_url_code" role="button" aria-expanded="false" aria-controls="helpers_build_url_code"> Toggle Code </a> <div class="collapse" id="helpers_build_url_code"> <pre><code class="lang-php">function build_url(array $parts) : string
+{
+    return (isset($parts['scheme']) ? "{$parts['scheme']}:" : '') .
+        ((isset($parts['user']) || isset($parts['host'])) ? '//' : '') .
+        (isset($parts['user']) ? "{$parts['user']}" : '') .
+        (isset($parts['pass']) ? ":{$parts['pass']}" : '') .
+        (isset($parts['user']) ? '@' : '') .
+        (isset($parts['host']) ? "{$parts['host']}" : '') .
+        (isset($parts['port']) ? ":{$parts['port']}" : '') .
+        (isset($parts['path']) ? "{$parts['path']}" : '') .
+        (isset($parts['query']) ? "?{$parts['query']}" : '') .
+        (isset($parts['fragment']) ? "#{$parts['fragment']}" : '');
+}</code></pre> </div> <hr> <h4 id="helpers_rel_path"> <span class="font-weight-bold">rel_path</span> <span class="text-muted"> : <i>string</i></span> </h4> <p class="lead font-italic text-muted">Convert an absolute path into a relative</p> <h5>Parameters</h5> <ul> <li> <span class="text-muted font-italic">string</span> - <strong>$path</strong> </li> <li> <span class="text-muted font-italic">string</span> - <strong>$compareWith</strong> </li> </ul> <a class="pb-1 d-block" data-toggle="collapse" href="#helpers_rel_path_code" role="button" aria-expanded="false" aria-controls="helpers_rel_path_code"> Toggle Code </a> <div class="collapse" id="helpers_rel_path_code"> <pre><code class="lang-php">function rel_path(string $path, string $compareWith) : string
+{
+    return ltrim(substr($path, strlen($compareWith)), '/');
+}</code></pre> </div> </div> </div> </div>
+</section> </main> <footer id="footer" class="section-p py-4"> <div class="copyright text-center text-muted"> &copy; 2020 &mdash; <a href="https://nsrosenqvist.github.io/" target="_blank">Niklas Rosenqvist</a> </div> </footer> <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" integrity="sha256-L504iuNgIbVl3VZnwnG/kFzI8QdrCmYYtuT0Pxe2c/0=" crossorigin="anonymous"></script> <script src="https://soma-php.github.io/main.a1379b27.js"></script> </body></html>
